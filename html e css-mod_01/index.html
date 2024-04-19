@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pictures/Martz90-Hex-Html-5.ico" type="image/x-icon">
+    <title>HTML E CSS GERAL</title>
+    <style>
+        mark{
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <hr>
+    <p>Esse é o meu primeiro documento HTML. Estou muito feliz!</p>
+    <p>Este é um momento único! Estou criando um site!</p>
+    <hr>
+    <br>
+    <h1>Parágrafos e quebras de linha</h1>
+    <hr>
+    <p>Você pode escrever 
+        um parágrafo de qualquer jeito. 
+        Basta colocar tudo no meio de do par de tags &lt;p&gt; e &lt;/p&gt;. <!-- LESS THAN / GREATER THAN --></p>
+    
+    <p>Se precisar quebrar o texto em algum lugar específico <br> como esse, você pode usar a tag &lt;br&gt;.</p>
+
+    <P>Vamos adicionar alguns símbolos especiais:
+        &reg;
+        &copy;
+        &trade;
+        &euro;
+        &pound;
+        &yen;
+        &cent;
+        &Delta;
+        &uarr;
+    </P>
+    <p>Vamos adicionar alguns emojis:
+        &#x1f596;
+    </p>
+    <hr>
+    <h1>Testando carga e Imagens</h1>
+    <p>Abaixo você vai ver uma imagem que está na mesma pasta.</p>
+    <img src="pictures/viajar200.png" alt="Imagem de avião">
+    <p>Também podemos carregar imagens externas</p>
+    <img src="https://commons.wikimedia.org/wiki/File:HTML5_Badge.svg" alt="Logo Master D">
+    <hr>
+    <h1>Teste de Favicon</h1>
+    <hr>
+
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B (não semântica)</p>
+    <p>Nessa frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica)</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nessa frase, temos um <i>termo em itálico</i> usando a tag I (não semântica)</p>
+    <p>Nessa frase, temos um <em>termo em ênfase</em> usando a tag EM. (semântica)</p>
+    <hr>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag MARK.</p>
+    <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+    <hr>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texo pequeno</small> nesse parágrafo.</p>
+    <hr>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. </p>
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica).</p>
+    <hr>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    <hr>
+    <br>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getelemet.ById('teste')</code> é escrito em linguagem JavaScript</p>
+    <pre>
+        <code>
+    num = int(imput('Digite um número'))
+    if num % 2 ==0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é IMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+    
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://books.google.pt/books?id=E8ZtDwAAQBAJ&newbks=0&hl=pt-PT&source=newbks_fb&redir_esc=y">
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hiper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style sheets">CSS</abbr>. Estou adorando!</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <hr>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1" start="4"> <!--1 A a I i-->
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a Faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+
+    <h2>Lista não Ordenadas</h2>
+    <ul type="circle"> <!-- disc circle square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <hr>
+
+    <h1>Minhas linguagens favoritas</h1>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNS</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+    </dl>
+    <hr>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external"> canal no Youtube</a> </p>
+    <hr>
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser você pode acessar também a minha <a href="pag2.html" rel="next" target="_self">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <hr>
+
+    <h1>Links para dowload</h1>
+    <ul>
+        <li> <a href="Livro/Efeitos visuais e estilos de listas.pdf" download="Efeitos visuais e estilos de listas.pdf" type="application/pdf">Baixar o livro em PDF</a> </li>
+        <li><a href="Livro/Efeitos visuais e estilos de listas.rar" download="Efeitos visuais e estilos de listas.pdf" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
